@@ -1,7 +1,7 @@
 <?php
-namespace Domains\Task\DataTransferObject;
+namespace Domains\Taks\DataTransferObject;
 
-use App\Api\Task\Http\Requests\TaskRequest;
+use App\Api\Taks\Http\Requests\TaskRequest;
 use Spatie\DataTransferObject\DataTransferObject;
 
 class TaskData extends DataTransferObject

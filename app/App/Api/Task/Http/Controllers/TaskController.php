@@ -15,11 +15,12 @@ class  TaskController extends Controller
 {
     /**
      *
-     * @param  TaskRepository  $taskRepository
+     * @param  UserRepository  $taskRepository
      * @return void
      */
     public function __construct(TaskRepository $taskRepository)
     {
+        $this->middleware('jwt.auth');
         $this->repository = $taskRepository;
     }
 
@@ -59,6 +60,6 @@ class  TaskController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $taskDto =  TaskData::fromRequest($request);
+        $taskDto =  UserData::fromRequest($request);
     }
 }

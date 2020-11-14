@@ -21,7 +21,7 @@ class CreateTaskTable extends Migration
             $table->integer('usuario_id', false)->unsigned();
             $table->foreign('usuario_id')
                   ->references('id')
-                  ->on('acl_usuario');
+                  ->on('usuario');
 
             $table->timestamps();
         });
