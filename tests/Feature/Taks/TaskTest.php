@@ -26,11 +26,25 @@ class TaskTest extends TestCase
      *
      * @return void
      */
-    public function testShouldUserBeAuthenticate()
+    public function testShouldUserBeUnauthorized()
     {
         $task = factory(Task::class)->create();
 
         $this->post('api/tasks', $task->toArray())
              ->assertUnauthorized();
+    }
+
+
+    /**
+     * Verifica se um usuário está autenticado
+     *
+     * @return void
+     */
+    public function testShouldUserBeAuthenticate()
+    {
+        $task = factory(Task::class)->create();
+
+        $this->post('api/tasks', $task->toArray())
+            ->assertUnauthorized();
     }
 }

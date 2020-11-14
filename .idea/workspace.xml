@@ -2,37 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10000adb-2f84-4f49-a149-9b25deefcefc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/App/Api/Auth/Http/Controllers/AuthController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/App/Api/Auth/Http/Routes/Api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/App/Api/Auth/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/App/Api/Auth/Providers/UnitServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/App/Api/User/Http/Controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/App/Api/User/Http/Requests/UserRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/App/Api/User/Http/Routes/Api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/App/Api/User/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/App/Api/User/Providers/UnitServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Domains/User/DataTransferObjects/UserData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Domains/User/Repositories/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Domains/User/Transformers/UserCollectionTransformer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Domains/User/Transformers/UserTransformer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/ProductFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checklist-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checklist-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/AuthTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/App/Api/Task/Http/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/App/Api/Task/Http/Controllers/TaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Domains/Task/DataTransferObjects/TaskData.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Domains/Task/DataTransferObjects/TaskData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Domains/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Domains/User/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_11_003222_create_acl_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_11_003222_create_user_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_11_115558_create_acl_roles_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_11_115846_create_acl_role_users.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_11_600000_create_task_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_11_600000_create_task_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Taks/TaskTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Taks/TaskTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Taks/TaskTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,14 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/Taks/TaskTest.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/Unit/ExampleTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-              <folding>
-                <element signature="e#33#62#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="414">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/Unit/AuthTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -114,7 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Support/Http/Controllers/ResponseTrait.php" />
         <option value="$PROJECT_DIR$/app/Support/Http/Controllers/Controller.php" />
         <option value="$PROJECT_DIR$/app/App/Api/Taks/Http/Routes/Api.php" />
         <option value="$PROJECT_DIR$/app/App/Api/Taks/Http/Controllers/VehicleController.php" />
@@ -165,6 +142,7 @@
         <option value="$PROJECT_DIR$/app/App/Core/HttpKernel.php" />
         <option value="$PROJECT_DIR$/app/App/Api/Task/Http/Controllers/TaskController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/Taks/TaskTest.php" />
+        <option value="$PROJECT_DIR$/tests/Unit/AuthTest.php" />
       </list>
     </option>
   </component>
@@ -350,6 +328,12 @@
               <item name="Feature" type="462c0819:PsiDirectoryNode" />
               <item name="Taks" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="checklist-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="checklist-api" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Unit" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -359,7 +343,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/factories" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Unit" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -367,11 +351,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Webserver\www\tests\perfilrsti\checklist-api\tests\Unit" />
       <recent name="C:\Webserver\www\tests\perfilrsti\checklist-api\database\factories" />
       <recent name="C:\Webserver\www\tests\perfilrsti\checklist-api\app\App\Api\Auth" />
       <recent name="C:\Webserver\www\tests\perfilrsti\checklist-api\app\App\Api\Auth\Http\Routes" />
       <recent name="C:\Webserver\www\tests\perfilrsti\checklist-api\app\Domains\User" />
-      <recent name="C:\Webserver\www\tests\perfilrsti\checklist-api\app\App\Api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Webserver\www\tests\perfilrsti\checklist-api\tests\Feature\Taks" />
@@ -412,12 +396,12 @@
       <workItem from="1604799002173" duration="2849000" />
       <workItem from="1604981740545" duration="9120000" />
       <workItem from="1605050161818" duration="10669000" />
-      <workItem from="1605359335076" duration="9079000" />
+      <workItem from="1605359335076" duration="10098000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31717000" />
+    <option name="totallyTimeSpent" value="32736000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,16 +453,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Support/Units/ServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-          <folding>
-            <element signature="e#39#73#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Support/Providers/HelperServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -786,13 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/ExampleTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/TestCase.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -854,6 +821,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Taks/TaskTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="19" />
+          <folding>
+            <element signature="e#33#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/ExampleTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/factories/ProductFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -864,13 +848,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/Taks/TaskTest.php">
+    <entry file="file://$PROJECT_DIR$/tests/Unit/AuthTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-          <folding>
-            <element signature="e#33#62#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="460">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
         </state>
       </provider>
     </entry>
