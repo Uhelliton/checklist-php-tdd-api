@@ -2,7 +2,7 @@
 namespace App\Api\Task\Http\Controllers;
 
 use App\Api\Task\Http\Requests\TaskRequest;
-use Domains\Task\DataTransferObject\TaskData;
+use Domains\Task\DataTransferObjects\TaskData;
 use Domains\Task\Repositories\TaskRepository;
 use Support\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -32,17 +32,18 @@ class  TaskController extends Controller
      */
     public function index()
     {
-        return $this->repository->all();
+        $task =  $this->repository->all();
+        return $this->response200($task);
     }
 
 
     /**
-     * Store a new user.
+     * Cria uma nova task
      *
      * @param  Request  $request
      * @return Response
      */
-    public function store(TaskRequest $request)
+    public function store(Request $request)
     {
         $taskDto = TaskData::fromRequest($request)->toArray();
         $task = $this->repository->create($taskDto);
@@ -51,8 +52,9 @@ class  TaskController extends Controller
         return $this->response201($task);
     }
 
+
     /**
-     * Update the given user.
+     * Atualiza uma task
      *
      * @param  Request  $request
      * @param  string  $id
@@ -60,6 +62,26 @@ class  TaskController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $taskDto =  UserData::fromRequest($request);
+        $taskDto = TaskData::fromRequest($request)->toArray();
+        $task = $this->repository->update($taskDto, $id);
+
+        if (!$task) return $this->response500();
+        return $this->response200($task);
+
+    }
+
+    /**
+     * Remove task
+     *
+     * @param  string  $id
+     * @return Response
+     */
+    public function destroy( $id)
+    {
+        $task = $this->repository->delete($id);
+
+        if (!$task) return $this->response500();
+        return $this->response200($task);
+
     }
 }

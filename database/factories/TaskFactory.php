@@ -2,9 +2,8 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\User;
 use Faker\Generator as Faker;
-
+use Domains\Task\Models\Task;
 /*
 |--------------------------------------------------------------------------
 | Model Factories
@@ -16,10 +15,10 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(\Domains\Task\Models\Task::class, function (Faker $faker) {
+$factory->define(Task::class, function (Faker $faker) {
     return [
-        'nome' => $faker->name,
-        'descricao' => $faker->address,
+        'nome'      => $faker->name,
+        'descricao' => $faker->name,
         'usuario_id' => 1,
     ];
 });

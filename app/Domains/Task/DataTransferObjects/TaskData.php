@@ -1,7 +1,7 @@
 <?php
-namespace Domains\Taks\DataTransferObject;
+namespace Domains\Task\DataTransferObjects;
 
-use App\Api\Taks\Http\Requests\TaskRequest;
+use Illuminate\Http\Request;
 use Spatie\DataTransferObject\DataTransferObject;
 
 class TaskData extends DataTransferObject
@@ -12,7 +12,7 @@ class TaskData extends DataTransferObject
 
     public int $usuario_id;
 
-    public static function fromRequest(TaskRequest $request): self
+    public static function fromRequest(Request $request): self
     {
         return new self([
             'nome'        => $request->get('title'),
