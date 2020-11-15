@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10000adb-2f84-4f49-a149-9b25deefcefc" name="Default Changelist" comment="" />
+    <list default="true" id="10000adb-2f84-4f49-a149-9b25deefcefc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +62,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="50" selection-start-column="50" selection-end-column="50" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -91,7 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Domains/Task/Transformers/TaskTransformer.php" />
         <option value="$PROJECT_DIR$/app/Domains/Task/Transformers/TaskCollectionTransformer.php" />
         <option value="$PROJECT_DIR$/app/App/Core/ConsoleKernel.php" />
         <option value="$PROJECT_DIR$/app/App/Core/Http/Routes/Console.php" />
@@ -142,6 +147,7 @@
         <option value="$PROJECT_DIR$/tests/Feature/Task/TaskTest.php" />
         <option value="$PROJECT_DIR$/app/App/Api/Task/Http/Controllers/TaskController.php" />
         <option value="$PROJECT_DIR$/app/App/Api/User/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -399,12 +405,12 @@
       <workItem from="1604799002173" duration="2849000" />
       <workItem from="1604981740545" duration="9120000" />
       <workItem from="1605050161818" duration="10669000" />
-      <workItem from="1605359335076" duration="29115000" />
+      <workItem from="1605359335076" duration="29864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51753000" />
+    <option name="totallyTimeSpent" value="52502000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -871,7 +877,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50" selection-start-column="50" selection-end-column="50" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
