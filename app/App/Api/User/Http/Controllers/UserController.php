@@ -25,7 +25,7 @@ class UserController extends Controller
     }
 
     /**
-     * Registro de novo usuário
+     * Lista todos os usuário
      *
      * @return Response
      */
@@ -50,15 +50,50 @@ class UserController extends Controller
         return $this->response201($user);
     }
 
+
     /**
-     * Update the given user.
+     * Lista um usuário
+     * @param int $id
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function show(int $id)
+    {
+        $user = $this->repository->find($id);
+
+        if (!$user) return $this->responseResourceEmpty();
+        return $this->response200($user);
+    }
+
+    /**
+     *  Atualiza um usuário
      *
      * @param  Request  $request
      * @param  string  $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, int $id)
     {
-        $taskDto =  TaskData::fromRequest($request);
+        $userDto = UserData::fromRequest($request)->toArray();
+        unset($userDto['password']);
+        
+        $user = $this->repository->update($userDto, $id);
+
+        if (!$user) return $this->response500();
+        return $this->response200($user);
+    }
+
+    /**
+     * Remove um usuário
+     *
+     * @param  Request  $request
+     * @param  string  $id
+     * @return Response
+     */
+    public function destroy(int $id)
+    {
+        $user = $this->repository->delete($id);
+
+        if (!$user) return $this->response500();
+        return $this->response200($user);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Feature\Auth;
 
 use Domains\Task\Models\Task;
 use Illuminate\Foundation\Testing\RefreshDatabase;

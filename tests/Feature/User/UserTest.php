@@ -1,14 +1,13 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Feature\User;
 
-use Domains\Task\Models\Task;
 use Domains\User\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 use JWTAuth;
 
-class TaskTest extends TestCase
+class UserTest extends TestCase
 {
     /**
      * @var string
@@ -18,7 +17,7 @@ class TaskTest extends TestCase
     /**
      * @var
      */
-    private $task;
+    private $user;
 
     public function setUp() :void
     {
@@ -28,10 +27,10 @@ class TaskTest extends TestCase
         $token = JWTAuth::fromUser($user);
 
         $this->token = $token;
-        $this->task = [
-            'title'       => 'test',
-            'description' => 'test',
-            'userId'      => 1,
+        $this->user = [
+            'name'       => 'test',
+            'email'      => 'test@admin.com',
+            'password'   => bcrypt('secret'),
         ];
     }
 
@@ -41,7 +40,7 @@ class TaskTest extends TestCase
      *
      * @return void
      */
-    public function testShouldUserBeUnauthorized()
+    public function it_should_user_be_unauthorized()
     {
         $task = factory(Task::class)->create();
 
@@ -55,7 +54,7 @@ class TaskTest extends TestCase
      *
      * @return void
      */
-    public function testShouldUserBeAuthenticate()
+    public function it_should_user_be_authenticate()
     {
         $task = factory(Task::class)->create();
 
@@ -65,46 +64,62 @@ class TaskTest extends TestCase
 
 
     /** @test ***/
-    public function it_should_create_task()
+    public function it_should_create_user()
     {
         // $this->withoutExceptionHandling();
         $response = $this->withHeaders([
             'Authorization' => 'Bearer '. $this->token,
         ]);
 
-        $response->post('api/tasks',  $this->task)
+        $response->post('api/users',  $this->user)
                  ->assertStatus(201);
 
-        $response->assertDatabaseHas('tarefa', [
-           'nome'       =>  $this->task['title'],
-           'descricao'  =>  $this->task['description'],
-           'usuario_id' =>  $this->task['userId'],
+        $response->assertDatabaseHas('usuario', [
+           'nome'     =>  $this->user['name'],
+           'email'    =>  $this->user['email'],
         ]);
     }
 
     /** @test ***/
-    public function it_should_update_task()
+    public function it_should_show_user()
     {
-        $task = factory(Task::class)->create();
+        $response = $this->withHeaders([
+            'Authorization' => 'Bearer '. $this->token,
+        ]);
+
+        $response->get('api/users/1')->assertStatus(200);
+    }
+
+    /** @test ***/
+    public function it_should_show_user_unauthorized()
+    {
+        $this->get('api/users/1')->assertUnauthorized(200);
+    }
+
+
+    /** @test ***/
+    public function it_should_update_user()
+    {
+        $user = factory(User::class)->create();
 
         $response = $this->withHeaders([
             'Authorization' => 'Bearer '. $this->token,
         ]);
 
-        $response->put("api/tasks/{$task->id}",  $this->task)
+        $response->put("api/users/{$user->id}",  $this->user)
                  ->assertStatus(200);
     }
 
     /** @test ***/
-    public function it_should_delete_task()
+    public function it_should_delete_user()
     {
-        $task = factory(Task::class)->create();
+        $user = factory(User::class)->create();
 
         $response = $this->withHeaders([
             'Authorization' => 'Bearer '. $this->token,
         ]);
 
-        $response->delete("api/tasks/{$task->id}",  $this->task)
+        $response->delete("api/users/{$user->id}",  $this->user)
             ->assertStatus(200);
     }
 }

@@ -30,6 +30,7 @@ abstract class AbstractRepository implements RepositoryInterface
      */
     public function all($collumns = array('*'), int $limit = null)
     {
+        $limit = ($limit) ? $limit : 10;
         $collection =
             $this->model
                 ->select($collumns)

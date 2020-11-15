@@ -32,8 +32,7 @@ class  TaskController extends Controller
      */
     public function index()
     {
-        $task =  $this->repository->all();
-        return $this->response200($task);
+        return $this->repository->all();
     }
 
 
@@ -60,7 +59,7 @@ class  TaskController extends Controller
      * @param  string  $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, int $id)
     {
         $taskDto = TaskData::fromRequest($request)->toArray();
         $task = $this->repository->update($taskDto, $id);
@@ -71,12 +70,27 @@ class  TaskController extends Controller
     }
 
     /**
+     * Exibe uma task
+     *
+     * @param  string  $id
+     * @return Response
+     */
+    public function show( int $id)
+    {
+        $task = $this->repository->find($id);
+
+        if (!$task) return $this->responseResourceEmpty();
+        return $this->response200($task);
+
+    }
+
+    /**
      * Remove task
      *
      * @param  string  $id
      * @return Response
      */
-    public function destroy( $id)
+    public function destroy( int $id)
     {
         $task = $this->repository->delete($id);
 
