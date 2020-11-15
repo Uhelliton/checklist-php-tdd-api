@@ -75,7 +75,7 @@ class UserController extends Controller
     {
         $userDto = UserData::fromRequest($request)->toArray();
         unset($userDto['password']);
-        
+
         $user = $this->repository->update($userDto, $id);
 
         if (!$user) return $this->response500();

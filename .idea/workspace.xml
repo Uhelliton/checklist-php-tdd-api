@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10000adb-2f84-4f49-a149-9b25deefcefc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/Feature/User/UserTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/App/Api/Task/Http/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/App/Api/Task/Http/Controllers/TaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/App/Api/User/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/App/Api/User/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Support/Repository/AbstractRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Support/Repository/AbstractRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Taks/AuthTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Auth/AuthTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Taks/TaskTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Task/TaskTest.php" afterDir="false" />
-    </list>
+    <list default="true" id="10000adb-2f84-4f49-a149-9b25deefcefc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/tests/Feature/User/UserTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
-              <caret line="97" lean-forward="true" selection-start-line="82" selection-start-column="4" selection-end-line="97" />
+              <caret line="97" selection-start-line="82" selection-start-column="4" selection-end-line="97" />
               <folding>
                 <element signature="e#33#62#0#PHP" expanded="true" />
               </folding>
@@ -49,21 +41,26 @@
         <entry file="file://$PROJECT_DIR$/tests/Feature/Task/TaskTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
-              <caret line="91" column="34" lean-forward="true" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="35" />
+              <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/App/Api/User/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="445">
-              <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
               <folding>
                 <element signature="e#48#91#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -257,7 +254,7 @@
       <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -402,12 +399,12 @@
       <workItem from="1604799002173" duration="2849000" />
       <workItem from="1604981740545" duration="9120000" />
       <workItem from="1605050161818" duration="10669000" />
-      <workItem from="1605359335076" duration="29114000" />
+      <workItem from="1605359335076" duration="29115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51752000" />
+    <option name="totallyTimeSpent" value="51753000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -419,7 +416,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
@@ -481,16 +478,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Support/Http/Routing/RoutesFile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-291">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="e#6#272#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Support/Http/Controllers/ResponseTrait.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -839,7 +826,7 @@
     <entry file="file://$PROJECT_DIR$/tests/Feature/User/UserTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
-          <caret line="97" lean-forward="true" selection-start-line="82" selection-start-column="4" selection-end-line="97" />
+          <caret line="97" selection-start-line="82" selection-start-column="4" selection-end-line="97" />
           <folding>
             <element signature="e#33#62#0#PHP" expanded="true" />
           </folding>
@@ -849,7 +836,7 @@
     <entry file="file://$PROJECT_DIR$/tests/Feature/Task/TaskTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="91" column="34" lean-forward="true" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="35" />
+          <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -876,12 +863,15 @@
     <entry file="file://$PROJECT_DIR$/app/App/Api/User/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
-          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
           <folding>
             <element signature="e#48#91#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
