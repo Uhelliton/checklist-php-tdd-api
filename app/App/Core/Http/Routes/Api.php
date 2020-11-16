@@ -10,7 +10,9 @@ class Api extends RoutesFile
     public function routes()
     {
         $this->router->get('/', function (){
-            return 'ops';
+            return response()->json([
+                'api' => '1.0.0'
+            ]);
         });
     }
 }
